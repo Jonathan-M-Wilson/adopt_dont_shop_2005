@@ -1,0 +1,13 @@
+<h1>Available Pets</h1>
+<h2><%= @shelter.name %></h2>
+
+<% @pets.each do |pet| %>
+  <% if pet.shelter_id == @shelter.id %>
+    <%= image_tag(pet.image, alt: "pet photo", method: :get) %>
+    <h3>Name: <%= pet.name %></h3>
+    <p>Approximate Age: <%= pet.approximate_age %></p>
+    <p>Sex: <%= pet.sex %></p>
+    <p>Shelter: <%= pet.shelter.name %></p>
+  <% else %>
+  <% end %>
+<% end %>

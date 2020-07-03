@@ -20,9 +20,10 @@ ActiveRecord::Schema.define(version: 20200702191746) do
     t.string "name"
     t.float "approximate_age"
     t.string "sex"
-    t.string "sheltered_at"
+    t.bigint "shelter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["shelter_id"], name: "index_pets_on_shelter_id"
   end
 
   create_table "shelters", force: :cascade do |t|
@@ -35,4 +36,5 @@ ActiveRecord::Schema.define(version: 20200702191746) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "pets", "shelters"
 end

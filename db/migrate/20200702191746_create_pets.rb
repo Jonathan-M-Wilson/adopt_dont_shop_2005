@@ -5,7 +5,7 @@ class CreatePets < ActiveRecord::Migration[5.1]
       t.string :name
       t.float :approximate_age
       t.string :sex
-      t.string :sheltered_at
+      t.references :shelter, foreign_key: true
 
       t.timestamps
     end
