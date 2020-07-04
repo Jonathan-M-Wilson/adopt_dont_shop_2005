@@ -8,3 +8,4 @@
 <p>Status: <%= @pet.status %></p>
 
 <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+<%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
