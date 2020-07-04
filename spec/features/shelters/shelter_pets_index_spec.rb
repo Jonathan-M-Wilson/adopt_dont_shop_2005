@@ -3,14 +3,14 @@ require 'rails_helper'
 RSpec.describe "shelter pets index", type: :feature do
   it "can see each pet from specific Shelter, including pet's image, name, approx age, and sex" do
 
-    shelter_1 = Shelter.create!(name:       "Good Boys Are Us",
+    shelter_1 = Shelter.create!(name:        "Good Boys Are Us",
                                 address:     "1234 ABC Street",
                                 city:        "Denver",
                                 state:       "Colorado",
                                 zip:         80202)
 
 
-    shelter_2 = Shelter.create!(name:       "I Don't Bite Hard",
+    shelter_2 = Shelter.create!(name:        "I Don't Bite Hard",
                                 address:     "4321 CBA Street",
                                 city:        "Revned",
                                 state:       "Colorado",

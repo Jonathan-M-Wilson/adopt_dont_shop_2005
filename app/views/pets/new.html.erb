@@ -1,0 +1,17 @@
+<h1>Add New Pet</h1>
+<br>
+<%= form_tag "/shelters/#{@shelter.id}/pets" do %>
+  <%= label_tag :image %><br>
+  <%= text_field_tag :image %><br><br>
+  <%= label_tag :name %><br>
+  <%= text_field_tag :name %><br><br>
+  <%= label_tag :age %><br>
+  <%= text_field_tag :approximate_age %><br><br>
+  <%= label_tag :description %><br>
+  <%= text_field_tag :description %><br><br>
+  <%= label_tag :sex %><br>
+  <%= text_field_tag :sex %><br><br>
+
+  <%= text_field_tag :status, 'adoptable', :readonly => true %><br>
+  <%= submit_tag 'Save Pet' %>
+<% end %>
