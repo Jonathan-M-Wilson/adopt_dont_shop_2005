@@ -29,7 +29,7 @@ RSpec.describe "shelter pets index", type: :feature do
                         sex:                 "Female",
                         shelter_id:          shelter_1.id)
 
-    pet_2 = Pet.create!(image:               "https://cdn0.wideopenpets.com/wp-content/uploads/2019/03/Untitled-design-2019-03-27T180734.510-770x405.jpg",
+    pet_3 = Pet.create!(image:               "https://cdn0.wideopenpets.com/wp-content/uploads/2019/03/Untitled-design-2019-03-27T180734.510-770x405.jpg",
                         name:                "Sokka",
                         approximate_age:     3.0,
                         sex:                 "Male",
