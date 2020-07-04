@@ -6,3 +6,5 @@
 <p>Sex: <%= @pet.sex %></p>
 <p>Sheltered At: <%= @pet.shelter.name %></p>
 <p>Status: <%= @pet.status %></p>
+
+<%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>

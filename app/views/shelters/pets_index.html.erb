@@ -1,7 +1,6 @@
 <h1>Available Pets</h1>
 <h2><%= @shelter.name %></h2>
 
-<%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
 
 <% @pets.each do |pet| %>
   <% if pet.shelter_id == @shelter.id %>
@@ -12,3 +11,5 @@
   <% else %>
   <% end %>
 <% end %>
+
+<%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
