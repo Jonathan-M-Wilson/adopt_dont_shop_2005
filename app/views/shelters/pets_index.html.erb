@@ -4,9 +4,9 @@
   </div>
 
   <div class="navigate">
-    <%= link_to 'Back to Shelters', "/shelters" %>
+    <%= link_to 'Go back to Shelters', "/shelters" %>
     <br>
-    <%= link_to 'Back to Pets', "/pets" %>
+    <%= link_to 'Go back to Pets', "/pets" %>
   </div>
 
   <h2>Available Pets<h2>
@@ -30,6 +30,6 @@
         <% else %>
       <% end %>
     <% end %>
-</body>
+  </body>
 <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
 </div>

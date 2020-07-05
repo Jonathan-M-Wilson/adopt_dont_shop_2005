@@ -12,7 +12,11 @@
   font: normal 24px Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px red;
   line-height:1.6em;
+}
 
+.show_shelter_page h1{
+  margin: 0;
+  font: normal 38px Arial, Helvetica, sans-serif;
 }
 
 .show_shelter_page h2{
@@ -28,10 +32,18 @@
   color: #4B0082;
 }
 
+.shelter_pets_index h1{
+  margin: 0;
+  text-align: center;
+  font: normal 38px Arial, Helvetica, sans-serif;
+  color: #00CED1;
+}
+
 .pet_photo img{
   height: 250px;
   width: 250px;
   object-fit: cover;
+  padding-top: 25px;
 }
 
 html, body {
@@ -70,9 +82,10 @@ html, body {
   text-align: left;
   font: normal 26px Arial, Helvetica, sans-serif;
   color: #F08080;
-  padding-bottom: 75px;
+
   border-bottom: dotted;
   border-width: 3px;
+  margin: 0;
 }
 
 .new_shelter_info{

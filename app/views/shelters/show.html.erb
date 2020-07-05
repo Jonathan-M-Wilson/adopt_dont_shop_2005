@@ -4,13 +4,13 @@
     <link rel="stylesheet" href="stylesheets/main.css">
 
     <div class="navigate">
-      <a><%= link_to 'Shelters', "/shelters" %></a>
+      <a><%= link_to 'Go back to Shelters', "/shelters" %></a>
       <br>
-      <a><%= link_to 'Pets', "/pets" %></a>
+      <a><%= link_to 'Go back to Pets', "/pets" %></a>
     </div>
 
     <h2><%= @shelter.name %></h2>
-    <body>        
+    <body>
         <p>Address: <%= @shelter.address %></p>
         <p>City: <%= @shelter.city %></p>
         <p>State: <%= @shelter.state %></p>

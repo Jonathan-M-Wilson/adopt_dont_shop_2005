@@ -1,19 +1,26 @@
-<h1>Add New Pet</h1>
-<%= link_to 'Shelters', "/shelters" %>
-<%= link_to 'Pets', "/pets" %>
-<br>
-<%= form_tag "/shelters/#{@shelter.id}/pets" do %>
-  <%= label_tag :image %><br>
-  <%= text_field_tag :image %><br><br>
-  <%= label_tag :name %><br>
-  <%= text_field_tag :name %><br><br>
-  <%= label_tag :age %><br>
-  <%= text_field_tag :approximate_age %><br><br>
-  <%= label_tag :description %><br>
-  <%= text_field_tag :description %><br><br>
-  <%= label_tag :sex %><br>
-  <%= text_field_tag :sex %><br><br>
-
-  <%= text_field_tag :status, 'adoptable', :readonly => true %><br>
-  <%= submit_tag 'Save Pet' %>
-<% end %>
+<div class="shelter_new">
+  <h1>Add New Pet</h1>
+  <div class="navigate">
+    <a><%= link_to 'Go back to Shelters', "/shelters" %></a><br>
+    <a><%= link_to 'Go back to Pets', "/pets" %></a>
+  </div>
+  <br>
+  <div class="new_shelter_info">
+    <ol>
+      <%= form_tag "/shelters/#{@shelter.id}/pets" do %>
+      <li><%= label_tag :image %></li>
+      <%= text_field_tag :image %><br>
+      <li><%= label_tag :name %></li>
+      <%= text_field_tag :name %><br>
+      <li><%= label_tag :age %></li>
+      <%= text_field_tag :approximate_age %><br>
+      <li><%= label_tag :description %></li>
+      <%= text_field_tag :description %><br>
+      <li><%= label_tag :sex %></li>
+      <%= text_field_tag :sex %><br><br>
+      <li><%= text_field_tag :status, 'adoptable', :readonly => true %></li><br>
+      <%= submit_tag 'Save Pet' %>
+    </ol>
+    <% end %>
+  </div>
+</div>

@@ -1,13 +1,23 @@
-<h1><%= @pet.name %></h1>
-<%= link_to 'Shelters', "/shelters" %>
-<%= link_to 'Pets', "/pets" %>
+<div class="show_shelter_page">
+  <div class="navigate">
+    <%= link_to 'Go back to Shelters', "/shelters" %> <br>
+    <%= link_to 'Go back to Pets', "/pets" %><br><br>
+  </div>
 
-<p><%= image_tag(@pet.image, alt: "pet photo", method: :get) %></p>
-<p>Description: <%= @pet.description %></p>
-<p>Approximate Age: <%= @pet.approximate_age %></p>
-<p>Sex: <%= @pet.sex %></p>
-<p>Sheltered At: <%= link_to "#{@pet.shelter.name}" %></p>
-<p>Status: <%= @pet.status %></p>
+  <body>
+    <h1><%= @pet.name %></h1>
+    <div class="pet_photo">
+      <p><%= image_tag(@pet.image, alt: "pet photo", method: :get) %></p>
+    </div>
+      <p>Description: <%= @pet.description %></p>
+      <p>Approximate Age: <%= @pet.approximate_age %></p>
+      <p>Sex: <%= @pet.sex %></p>
+      <p>Sheltered At: <%= link_to "#{@pet.shelter.name}", "/shelters/#{@pet.shelter.id}/pets" %></p>
+      <p>Status: <%= @pet.status %></p>
+  </body>
 
-<%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
-<%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
+  <div class="navigate">
+    <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+    <%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
+  </div>
+</div>
