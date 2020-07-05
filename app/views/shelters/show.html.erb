@@ -1,9 +1,25 @@
-<h2><%= @shelter.name %></h2>
-<%= link_to 'Shelters', "/shelters" %>
-<%= link_to 'Pets', "/pets" %>
+  <head>
+    <div class="show_shelter_page">
 
-<p>Address: <%= @shelter.address %></p>
-<p>City: <%= @shelter.city %></p>
-<p>State: <%= @shelter.state %></p>
-<p>Zip: <%= @shelter.zip %></p>
-<%= link_to 'This Shelter\'s Pets', "/shelters/#{@shelter.id}/pets" %>
+    <title><%= @shelter.name %></title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+
+    <div class="navigate">
+      <a><%= link_to 'Shelters', "/shelters" %></a>
+      <br>
+      <a><%= link_to 'Pets', "/pets" %></a>
+    </div>
+
+    <h2><%= @shelter.name %></h2>
+    <body>
+        <div>
+        <p>Address: <%= @shelter.address %></p>
+        <p>City: <%= @shelter.city %></p>
+        <p>State: <%= @shelter.state %></p>
+        <p>Zip: <%= @shelter.zip %></p>
+      </div>
+    </body>
+      <div class="navigate">
+      <a><%= link_to 'This Shelter\'s Pets', "/shelters/#{@shelter.id}/pets" %></a>
+      </div>
+    </div>

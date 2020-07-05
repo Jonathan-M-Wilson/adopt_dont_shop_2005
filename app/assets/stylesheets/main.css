@@ -1,0 +1,38 @@
+.show_shelter_page{
+  background-image: url(https://wallpaperaccess.com/full/266770.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+  height: 100%;
+}
+
+.show_shelter_page p{
+  font: normal 24px Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px red;
+  line-height:1.6em;
+
+}
+
+.show_shelter_page h2{
+  color: #00CED1;
+  text-decoration: underline;
+  font: normal 32px Arial, Helvetica, sans-serif;
+  line-height:1.6em;
+  letter-spacing: 2px
+}
+
+.show_shelter_page a{
+  font: normal 24px Arial, Helvetica, sans-serif;
+  color: #4B0082;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+a:hover{
+    color:red;
+}
