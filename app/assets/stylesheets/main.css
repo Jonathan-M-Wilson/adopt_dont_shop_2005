@@ -28,6 +28,12 @@
   color: #4B0082;
 }
 
+.pet_photo img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -35,4 +41,40 @@ html, body {
 
 a:hover{
     color:red;
+}
+
+
+.shelter_pets_index {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/curls.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shelter_pets_index a{
+  color: #00CED1;
+}
+
+.shelter_pets_index a:hover{
+  color: red;
+}
+
+.title_link{
+  text-align: center;
+  font: normal 34px Arial, Helvetica, sans-serif;
+}
+
+.shelter_pets_index h2{
+  text-align: left;
+  font: normal 32px Arial, Helvetica, sans-serif;
+  color: #00CED1;
+}
+
+.pet_info{
+  text-align: left;
+  font: normal 26px Arial, Helvetica, sans-serif;
+  color: #F08080;
+  padding-bottom: 75px;
+  border-bottom: dotted;
+  border-width: 3px;
 }

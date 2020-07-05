@@ -1,4 +1,3 @@
-  <head>
     <div class="show_shelter_page">
 
     <title><%= @shelter.name %></title>
@@ -11,13 +10,11 @@
     </div>
 
     <h2><%= @shelter.name %></h2>
-    <body>
-        <div>
+    <body>        
         <p>Address: <%= @shelter.address %></p>
         <p>City: <%= @shelter.city %></p>
         <p>State: <%= @shelter.state %></p>
         <p>Zip: <%= @shelter.zip %></p>
-      </div>
     </body>
       <div class="navigate">
       <a><%= link_to 'This Shelter\'s Pets', "/shelters/#{@shelter.id}/pets" %></a>

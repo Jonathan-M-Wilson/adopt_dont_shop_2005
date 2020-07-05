@@ -1,21 +1,36 @@
-<h1>Available Pets</h1>
-<h2><%= link_to "#{@shelter.name}" %></h2>
-<%= link_to 'Shelters', "/shelters" %>
-<%= link_to 'Pets', "/pets" %>
+<div class="shelter_pets_index">
+  <div class="title_link">
+    <a><%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></a>
+  </div>
 
-
-<% @pets.each do |pet| %>
-  <% if pet.shelter_id == @shelter.id %>
-    <%= image_tag(pet.image, alt: "pet photo", method: :get) %>
-    <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
-    <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
+  <div class="navigate">
+    <%= link_to 'Back to Shelters', "/shelters" %>
     <br>
-    <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
-    <p>Approximate Age: <%= pet.approximate_age %></p>
-    <p>Sex: <%= pet.sex %></p>
+    <%= link_to 'Back to Pets', "/pets" %>
+  </div>
 
-  <% else %>
-  <% end %>
-<% end %>
-<br><br><br><br><br>
+  <h2>Available Pets<h2>
+  <body>
+    <% @pets.each do |pet| %>
+      <% if pet.shelter_id == @shelter.id %>
+      <div class="pet_photo">
+        <a><%= image_tag(pet.image, alt: "pet photo", method: :get) %></a>
+      </div>
+
+      <div class="pet_info">
+
+        <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
+        <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
+        <br>
+        <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
+        <p>Approximate Age: <%= pet.approximate_age %></p>
+        <p>Sex: <%= pet.sex %></p>
+
+      </div>
+        <% else %>
+      <% end %>
+    <% end %>
+</body>
+<br><br>
 <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
+</div>
