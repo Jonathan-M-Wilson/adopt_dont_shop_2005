@@ -1,8 +1,9 @@
 <div class="shelter_new">
   <h1>Create a New Shelter</h1>
-  <a><%= link_to 'Back to Shelters', "/shelters" %></a><br>
-  <a><%= link_to 'Back to Pets', "/pets" %></a>
-
+  <div class="navigate">
+    <a><%= link_to 'Back to Shelters', "/shelters" %></a><br>
+    <a><%= link_to 'Back to Pets', "/pets" %></a>
+  </div>
   <div class="new_shelter_info">
     <ol>
     <%= form_tag '/shelters' do %>
