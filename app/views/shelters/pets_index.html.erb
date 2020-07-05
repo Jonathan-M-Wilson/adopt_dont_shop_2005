@@ -17,7 +17,7 @@
         <a><%= image_tag(pet.image, alt: "pet photo", method: :get) %></a>
       </div>
 
-      <div class="pet_info">
+      <div class="info">
 
         <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
         <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
@@ -31,6 +31,5 @@
       <% end %>
     <% end %>
 </body>
-<br><br>
 <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
 </div>
