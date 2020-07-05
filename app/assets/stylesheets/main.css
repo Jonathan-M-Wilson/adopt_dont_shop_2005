@@ -78,3 +78,34 @@ a:hover{
   border-bottom: dotted;
   border-width: 3px;
 }
+
+.shelter_new {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/curls.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.shelter_new h1{
+  text-align: left;
+  font: normal 32px Arial, Helvetica, sans-serif;
+  color: #00CED1;
+}
+
+.shelter_new a{
+  color: #00CED1;
+}
+
+.shelter_new a:hover{
+  color: red;
+}
+
+.shelter_new_info {
+  text-align: left;
+  font: normal 26px Arial, Helvetica, sans-serif;
+  color: #F08080;
+  padding-bottom: 75px;
+  border-width: 3px;
+  padding: 15px;
+}
